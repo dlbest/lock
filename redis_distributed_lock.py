@@ -15,7 +15,7 @@ redis_cli = Redis.from_url('redis://localhost:6379/0')
 
 class DistributedLock(object):
     def __init__(self, lock_name):
-        self.lock_name = 'lock_name: ' + self.lock_name
+        self.lock_name = 'lock_name: ' + lock_name
         self.identifier = None
 
     def acquire(self, acquire_time=10, time_out=10):
