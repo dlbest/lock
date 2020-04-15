@@ -59,7 +59,7 @@ class DistributedLock(object):
 
     def keep(self, timeout=10):
         """
-        保持锁，重设时间
+        保持锁，重设时间，这个最好是用守护线程来做
         :param timeout: 锁的超时时间
         :return:
         """
